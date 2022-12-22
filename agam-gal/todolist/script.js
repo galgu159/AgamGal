@@ -4,7 +4,7 @@
     }
 });
 
-// Create a "close" button and append it to each list item
+// כפתור סגור
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -15,7 +15,7 @@ for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// הסתרת הרשימה
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -42,7 +42,7 @@ list.addEventListener('click', function (ev) {
     }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// יצירת הרשימה שנוסף עוד ועוד משימות
 function newElement(input) {
     var li = document.createElement("li");
 
